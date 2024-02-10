@@ -6,9 +6,48 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>HTML Project</title>
 </head>
+<style>
+  #header{
+    background-color: rgb(162, 166, 169);
+  
+  }
+  a{
+    text-decoration: none;
+  }
+  .bike-bg{
+    background-image: url("./images/bike-image.jpg");
+    background-size: cover;
+  }
+  .testimonial{
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .testimonial::before{
+    content: "";
+      background-image: url('./images/bg.jpeg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+  }
+  .testimonial tr td{
+    padding: 0 20px;
+    
+  }
+  input{
+    padding: 6px;
+    border-radius: 8px;
+  }
+</style>
 <body>
     <!--Start Header-->
-    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c7c1e0">
+    <table id="header" border="0" width="100%" cellpadding="0" cellspacing="0">
         <tr>
             <td>
                 <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
@@ -16,26 +55,26 @@
                         <td>
                             <font face="arial" color="#000000" size="5">
                                 <span class="fa fa-user-circle" aria-hidden="true"></span>
-                                UNKNOWN
+                                USER
                             </font>
                         </td>
                         <td >
                             &nbsp;
                         </td>
                         <td>
-                            <a href="#home"><font face="arial" color="#ffffff" size="4">Home</font></a>
+                            <a href=""><font face="arial" color="#ffffff" size="4">Home</font></a>
                         </td>
                         <td>
-                            <a href="#about"><font face="arial" color="#ffffff" size="4">plus member</font></a>
+                            <a href=""><font face="arial" color="#ffffff" size="4">plus member</font></a>
                         </td>
                         <td>
-                            <a href="#services"><font face="arial" color="#ffffff" size="4">Services</font></a>
+                            <a href=""><font face="arial" color="#ffffff" size="4">Services</font></a>
                         </td>
                         <td>
-                            <a href="#testimonial"><font face="arial" color="#ffffff" size="4">SPORTS</font></a>
+                            <a href=""><font face="arial" color="#ffffff" size="4">SPORTS</font></a>
                         </td>
                         <td>
-                            <a href="#achievements"><font face="arial" color="#ffffff" size="4">Achievements</font></a>
+                            <a href=""><font face="arial" color="#ffffff" size="4">Achievements</font></a>
                         </td>
                         <td>
 <i class="fa fa-shopping-cart" ></i>
@@ -50,24 +89,18 @@
     </table>
     <!--End Header-->
     <!--Start Home-->
-    <table id="home" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#00ff00">
+    <table id="home" border="0" width="100%" cellpadding="0" cellspacing="0">
         <tr>
             <td>
                 <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
                     <tr>
-                        <td align="center" valign="middle">
-                            <h3>
-                                <font face="courier new" color="black" size="10" height="160">
-                                 SHOES WALA 
-<td width="33%"> <img src="E:\PROJECT\giphy (1).gif" heigh="160"></td>
-                                </font>
-                            </h3>
+                        <td align="right" class="bike-bg" valign="middle" height="500">
                         
-                        <h2>
-                            <font face="arial" color="white"size="8">
-                             
-                           </font>
-                        </h2>
+                                <font face="courier new" color="white">
+                                <span style="font-size: 100px;font-weight: bold; color: aliceblue; opacity: 0.5;margin-left: 300px;margin-top: -100px;">New Launch</span> 
+                                
+                                </font>
+                       
                         </td>
                     </tr>
                 </table>
@@ -80,11 +113,11 @@
     <!--End Home-->
 
     <!--Start About-->
-    <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
+    <!-- <table id="about" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
         <tr>
             <td>
                 <table border="0" width="85%" cellpadding="05" cellspacing="0" align="center">
-                    <!-- Heading Start-->
+                    
                     <tr>
                         <td height="180" align="left" valign="left"colspan="2">
                                 <font face="arial" color="#f3971b" size="7">
@@ -96,7 +129,7 @@
                          </font>
                         </td>
                     </tr>
-                    <!--Heading End-->
+                  
                     <tr>
                         <td width="40%">
                             <img src="images/me1.png" alt="Saurabh Shukla"  width="90%">
@@ -121,7 +154,7 @@
         </tr>
 
 
-    </table>
+    </table> -->
     <!--End About-->
 
     <!--Start Services-->
@@ -131,7 +164,7 @@
                 <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
                     <!-- Heading Start-->
                     <tr>
-                        <td height="180" align="center" valign="middle" colspan="3">
+                        <td height="100" align="center" valign="middle" colspan="3">
                                 <font face="arial" color="#292929" size="6">
                                      PRODUCT 
                                 </font>
@@ -142,13 +175,13 @@
                     <!--Heading End-->
                     <tr>
                         <td width="33%">
-                            <a href="service1.ht"><img src="D:\SHIKHAJ\43c07e718acaa915803970e299dc5bb1.gif" alt="bhai ka joota"  width="100%"></a>
+                            <img src="./images/Continental-GT-650.jpg" alt="RE GT 650"  width="100%">
                         </td>
                         <td width="33%">
-                            <a href="service1.html"><img src="D:\SHIKHAJ\sh3.jpeg" alt="Service"  width="100%"></a>
+                            <img src="./images/himalayn.jpg" alt="RE Himalayn"  width="100%">
                         </td>
                         <td width="33%">
-                            <a href="service3.html"><img src="D:\SHIKHAJ\sh4.jpeg" alt="Service1"  width="100%"></a>
+                           <img src="./images/Shotgun-650.jpg" alt="RE Shotgun-650"  width="100%">
                         </td>
                     </tr>
                     <tr>
@@ -166,44 +199,44 @@
     <!--End Services-->
 
     <!--Start Testimonial-->
-    <table id="testimonial" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+    <table id="testimonial" class="testimonial" border="0" width="100%" cellpadding="0" cellspacing="0">
         <tr>
             <td>
                 <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
                     <!-- Heading Start-->
-                    <tr>
+                    <tr style="position: relative;">
                         <td height="180" align="center" valign="middle" colspan="3">
-                                <font face="arial" color="#f3971b" size="6">
-                                     LOGIN
+                                <font face="arial" color="white" size="6">
+                                     CUSTOMER REVIEW
                                 </font>
-                                <hr width="70" color="#f3971b">
+                                <hr width="200" color="white">
                         
                         </td>
                     </tr>
                     <!--Heading End-->
-                    <tr>
-                        <td width="33%" valign="top">
+                    <tr style="position: relative;text-align: justify;">
+                        <td width="33%" valign="top" >
                             <font face="arial" color="#ffffff">
-                                <h3 align="center">Akash Gupta</h3>
+                                <h3 align="center"> CUSTOMER1</h3>
                             </font>
-                            <font face="arial" color="#c2c0c3">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laudantium ex aperiam quas dolor molestias, nemo ipsam voluptates hic animi minima earum sit accusamus minus!
+                            <font face="arial" color="white">
+                              ESS AAR MOTORS. when ever I visit this royal Enfield showroom I feel like I am apart of this showroom. Their welcomed make us happy and this person Vishal i would like to give him 5 rating.
                             </font>
                         </td>
                         <td width="33%" valign="top">
                             <font face="arial" color="#ffffff">
-                                <h3 align="center">Akash Gupta</h3>
+                                <h3 align="center">CUSTOMER2</h3>
                             </font>
-                            <font face="arial" color="#c2c0c3">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laudantium ex aperiam quas dolor molestias, nemo ipsam voluptates hic animi minima earum sit accusamus minus!
-                            </font>
+                            <font face="arial" color="white">
+                              ESS AAR MOTORS. when ever I visit this royal Enfield showroom I feel like I am apart of this showroom. Their welcomed make us happy and this person Vishal i would like to give him 5 rating.
+                             </font>
                         </td>
                         <td width="33%" valign="top">
                             <font face="arial" color="#ffffff">
-                                <h3 align="center">Akash Gupta</h3>
+                                <h3 align="center">CUSTOMER3</h3>
                             </font>
-                            <font face="arial" color="#c2c0c3">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda laudantium ex aperiam quas dolor molestias, nemo ipsam voluptates hic animi minima earum sit accusamus minus!
+                            <font face="arial" color="white">
+                              ESS AAR MOTORS. when ever I visit this royal Enfield showroom I feel like I am apart of this showroom. Their welcomed make us happy and this person Vishal i would like to give him 5 rating.
                             </font>
                         </td>
                     </tr>
@@ -221,54 +254,7 @@
     </table>
     <!--End Testimonial-->
 
-    <!--Start Achievements-->
-    <table id="achievements" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#c2c0c3">
-        <tr>
-            <td>
-                <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
-                    <!-- Heading Start-->
-                    <tr>
-                        <td height="180" align="center" valign="middle" colspan="2">
-                                <font face="arial" color="#292929" size="6">
-                                     Achievements
-                                </font>
-                                <hr width="70" color="#292929">
-                        
-                        </td>
-                    </tr>
-                    <!--Heading End-->
-                    <tr>
-                        <td width="66%" valign="top">
-                           <font face="arial"color="#292929">
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sint nesciunt voluptates autem minima sed accusantium consequatur inventore nobis aspernatur?</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, non.</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis excepturi ullam distinctio.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur.</li>
-                                <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas vitae eveniet pariatur deleniti eius, mollitia fugiat.</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, id!</li>
-                                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam sequi voluptatibus hic optio provident!</li>
-                            </ul>
-                           </font>
-                        </td>
-                        <td valign="top">
-                            <img src="images/Achievements.png" alt="Achievements"  width="90%">
-                        </td>
-                        
-                    </tr>
-                    <tr>
-                        <td>
-                            &nbsp;
-                        </td>
-                    </tr>
-                </table>
-            </td>
-
-        </tr>
-
-
-    </table>
-    <!--End Achievements-->
+ 
 
     <!--Start Contact-->
     <table id="contact" border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#292929">
@@ -278,17 +264,17 @@
                     <!-- Heading Start-->
                     <tr>
                         <td height="180" align="center" valign="middle" colspan="1">
-                                <font face="arial" color="#f3971b" size="6">
+                                <font face="arial" color="white" size="6">
                                      Contact
                                 </font>
-                                <hr width="70" color="#f3971b">
+                                <hr width="70" color="white">
                         
                         </td>
                     </tr>
                     <!--Heading End-->
                     <tr>
                         <td align="center" valign="top">
-                           <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+                           <table border="0" width="50%" cellpadding="15" cellspacing="0" align="center" >
                                <tr>
                                    <td width="30%">
                                        <font face="arial" size="4" color="#ffffff">
@@ -330,7 +316,7 @@
                                    &nbsp;
                                 </td>
                                 <td width="70%">
-                                    <button type="Submit">
+                                    <button type="Submit" style="padding: 5px 15px;border-radius: 5px; cursor: pointer;">
                                         <font face="arial" size="4" color="#292929">
                                              Submit
                                         </font>
@@ -356,77 +342,75 @@
     <!--End Contact-->
 
     <!--Start Footer-->
-    <table id="header" border="1" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+    <table id="header" width="100%" cellpadding="0" cellspacing="0" bgcolor="#353535">
+      <tr>
+        <td height="180" align="center" valign="middle" colspan="3">
+                <font face="arial" color="white" size="6">
+                     FOLLOW US ON
+                </font>
+                <hr width="200" color="white">
+        
+        </td>
+    </tr>
         <tr>
             <td>
                 <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
                    
                     <tr>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-facebook-square" aria-hidden="true"></span>
                                 Facebook
                             </font>
                             
                         </td>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-twitter-square" aria-hidden="true"></span>
                                 Twitter
                             </font>
                             
                         </td>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-instagram" aria-hidden="true"></span>
                                 Instagram
                             </font>
                             
                         </td>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-linkedin-square" aria-hidden="true"></span>
                                 Linkedin
                             </font>
                             
                         </td>
-                        <td rowspan="2">
-                            <font face="arial" color="#ffffff" size="5">
-                                <span class="fa fa-arrow-circle-up" aria-hidden="true"></span>
-                             <a href="#header">
-                                <font face="arial" color="#ffffff" size="5">
-                                    Top
-                                </font>
-                                
-                            </a>
-                            </font>
-                            
-                        </td>
+                       
                     </tr>
                     <tr>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-youtube-square" aria-hidden="true"></span>
                                 YouTube
                             </font>
                             
                         </td>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-rss-square" aria-hidden="true"></span>
                                 Blog
                             </font>
                             
                         </td>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-envelope-o" aria-hidden="true"></span>
                                 Email
                             </font>
                             
                         </td>
                         <td width="25%" valign="top">
-                            <font face="arial" color="#f3971b" size="5">
+                            <font face="arial" color="white" size="5">
                                 <span class="fa fa-globe" aria-hidden="true"></span>
                                 Website
                             </font>
